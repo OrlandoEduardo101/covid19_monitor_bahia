@@ -1,3 +1,5 @@
+import 'package:covid19monitorbahia/app/shared/storage/model/city_model.dart';
+import 'package:covid19monitorbahia/app/shared/storage/repositories/firebaseStorage_repository_interface.dart';
 import 'package:mobx/mobx.dart';
 
 part 'home_controller.g.dart';
@@ -5,11 +7,20 @@ part 'home_controller.g.dart';
 class HomeController = _HomeControllerBase with _$HomeController;
 
 abstract class _HomeControllerBase with Store {
+  final IFirebaseStorageRepository repository;
+  _HomeControllerBase({this.repository}){
+    getList();
+  }
+
   @observable
-  int value = 0;
+  CityModel city = CityModel();
+
+  @observable
+  ObservableStream<List<CityModel>> cityList;
 
   @action
-  void increment() {
-    value++;
+  Stream<List<CityModel>> getList() {
+    cityList = repository.getData().asObservable();
   }
+
 }

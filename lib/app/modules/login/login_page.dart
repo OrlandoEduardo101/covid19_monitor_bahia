@@ -1,4 +1,4 @@
-import 'package:covid19monitorbahia/shared/utils/constants.dart';
+import 'package:covid19monitorbahia/app/shared/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

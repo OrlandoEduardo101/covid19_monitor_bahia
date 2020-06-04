@@ -1,5 +1,6 @@
-import 'package:covid19monitorbahia/app/modules/home/login/components/textError/textError_controller.dart';
-import 'package:covid19monitorbahia/app/modules/home/login/stores/exception_store.dart';
+
+import 'package:covid19monitorbahia/app/modules/login/components/textError/textError_controller.dart';
+import 'package:covid19monitorbahia/app/modules/login/stores/exception_store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';

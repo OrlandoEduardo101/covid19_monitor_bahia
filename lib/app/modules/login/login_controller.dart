@@ -1,6 +1,6 @@
-import 'package:covid19monitorbahia/app/modules/home/login/stores/exception_store.dart';
-import 'package:covid19monitorbahia/shared/auth/auth_controller.dart';
-import 'package:covid19monitorbahia/shared/utils/constants.dart';
+import 'package:covid19monitorbahia/app/modules/login/stores/exception_store.dart';
+import 'package:covid19monitorbahia/app/shared/auth/auth_controller.dart';
+import 'package:covid19monitorbahia/app/shared/utils/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -44,7 +44,7 @@ abstract class _LoginControllerBase with Store {
       exceptionStore.setError('Carregando...');
       FirebaseUser user = await auth.loginWithEmail(email, password).then((_){
       load = true;
-      Modular.to.pushReplacementNamed('/home');
+      Modular.to.pushReplacementNamed('/register');
     } ).catchError((e){
       load = false;
       textErrorController.setColor(Colors.red);

@@ -1,4 +1,4 @@
-import 'package:covid19monitorbahia/shared/auth/repositories/auth_repository_interface.dart';
+import 'package:covid19monitorbahia/app/shared/auth/repositories/auth_repository_interface.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';

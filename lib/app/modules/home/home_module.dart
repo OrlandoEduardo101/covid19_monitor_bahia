@@ -1,14 +1,13 @@
 import 'package:covid19monitorbahia/app/modules/home/home_controller.dart';
+import 'package:covid19monitorbahia/app/modules/login/login_module.dart';
+import 'package:covid19monitorbahia/app/modules/login/login_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:covid19monitorbahia/app/modules/home/home_page.dart';
-
-import 'login/login_module.dart';
-import 'login/login_page.dart';
 
 class HomeModule extends ChildModule {
   @override
   List<Bind> get binds => [
-        Bind((i) => HomeController()),
+        Bind((i) => HomeController(repository: i.get())),
         Bind((i) => LoginModule()),
       ];
 

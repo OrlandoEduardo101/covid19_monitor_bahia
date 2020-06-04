@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597249493987",
+    "firebase_url": "https://covid19-monitor-bahia.firebaseio.com",
+    "project_id": "covid19-monitor-bahia",
+    "storage_bucket": "covid19-monitor-bahia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597249493987:android:24e874cff9e0f9d941aed6",
+        "android_client_info": {
+          "package_name": "com.orlandoeduardo101.covid19monitorbahia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597249493987-rcjqanpgtjod4fa7qajudmo5laei0apm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orlandoeduardo101.covid19monitorbahia",
+            "certificate_hash": "c6060a4aa0799e312fd49f99f5a4550b969fd7f3"
+          }
+        },
+        {
+          "client_id": "597249493987-7u6i581b01rqmr3ha1rbodqrith41t7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUo-3Obc8AOeWF7H0JZO4LKCSxJsOK_EQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597249493987-7u6i581b01rqmr3ha1rbodqrith41t7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
