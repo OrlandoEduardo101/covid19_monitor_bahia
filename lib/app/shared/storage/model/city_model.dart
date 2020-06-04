@@ -9,10 +9,11 @@ class CityModel {
   String monitoramento;
   String descartados;
   String curados;
+  String obitos;
   DocumentReference reference;
 
   CityModel({this.name='', this.uf='', this.suspeitos='', this.confirmados='',
-    this.importados='', this.monitoramento='', this.descartados='', this.curados='', this.reference,});
+    this.importados='', this.monitoramento='', this.descartados='', this.curados='', this.reference, this.obitos='',});
 
   factory CityModel.fromDocument(DocumentSnapshot doc) {
     return CityModel(
@@ -24,6 +25,7 @@ class CityModel {
       monitoramento: doc['monitoramento'],
       descartados: doc['descartados'],
       curados: doc['curados'],
+      obitos: doc['obitos'],
       reference: doc.reference,
      // position: doc['position'],
     );
@@ -39,6 +41,7 @@ class CityModel {
       monitoramento: json['monitoramento'],
       descartados: json['descartados'],
       curados: json['curados'],
+      obitos: json['obitos'],
         );
   }
 

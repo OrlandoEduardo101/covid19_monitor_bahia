@@ -12,7 +12,7 @@ class RegisterCityModule extends ChildModule {
   List<Bind> get binds => [
         Bind((i) => AddCityController(i.get())),
         Bind((i) => RegisterCityController(repository: i.get())),
-      //  Bind<IFirebaseStorageRepository>((i) => FirebaseStorageRepository(firestore: Firestore.instance)),
+        Bind<IFirebaseStorageRepository>((i) => FirebaseStorageRepository(Firestore.instance)),
 
   ];
 

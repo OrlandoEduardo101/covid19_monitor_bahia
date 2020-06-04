@@ -134,6 +134,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                   Text(
                     "Para atualizar informaçções ou adicionar cidades entre em contato por e-mail:\n",textAlign: TextAlign.center,style: TextStyle(fontSize: 14),),
                   Text("Orlando.Eduardo101@gmail.com",textAlign: TextAlign.center,style: TextStyle(fontSize: 14),),
+                  Text("\nTodos os dados fornecidos pelos portais das devidas prefeituras municipais.",textAlign: TextAlign.center,style: TextStyle(fontSize: 14),),
                 ],
               ),
             );
@@ -229,6 +230,15 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: 'Curados',
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 5)),
+                    TextFormField(
+                      initialValue: model.obitos,
+                      onChanged: (v) => model.obitos = v,
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Óbitos',
                       ),
                     ),
                     Padding(padding: EdgeInsets.only(top: 5)),

@@ -27,7 +27,7 @@ class _RegisterCityPageState
         actions: [
           IconButton(
               icon: Icon(Icons.add_circle_outline, color: Colors.red,),
-              onPressed: (){Modular.to.pushNamed('/addCity');}
+              onPressed: _showDialog // (){Modular.to.pushNamed('/addCity');}
           )
         ],
       ),
@@ -150,6 +150,15 @@ class _RegisterCityPageState
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Curados',
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  TextFormField(
+                    initialValue: model.obitos,
+                    onChanged: (v) => model.obitos = v,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Óbitos',
                     ),
                   ),
                 ],

@@ -1,4 +1,5 @@
 import 'package:covid19monitorbahia/app/shared/utils/constants.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -127,7 +128,9 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
                                       color: Colors.grey
                                   ),
                                 ),
-                                onTap: null,
+                                onTap: (){
+                                  FirebaseAuth.instance.sendPasswordResetEmail(email: controller.email);
+                                },
                               ),
                             ),
                             /*SizedBox(

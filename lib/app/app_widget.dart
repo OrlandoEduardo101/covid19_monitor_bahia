@@ -30,7 +30,7 @@ class AppWidget extends StatelessWidget {
     );*/
     return MaterialApp(
       navigatorKey: Modular.navigatorKey,
-      title: 'Flutter Slidy',
+      title: 'Covid 19 Bahia',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         accentColor: Colors.indigoAccent
