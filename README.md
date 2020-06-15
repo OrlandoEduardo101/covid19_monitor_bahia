@@ -1,6 +1,13 @@
 # covid19monitorbahia
 
-A new Flutter application.
+Aplicativo com o intuito de informar dados das cidades do recôncavo baiano acerca do Covid19, dados atualizados manualmente seguindo os boletins das prefeituras municipais.
+Utilizando firebase para login e armazenamento de dados.
+
+Tecnologias:
+-Flutter
+-Firebase
+-Modular
+-MobX
 
 ## Getting Started
 
