@@ -9,6 +9,12 @@ Tecnologias:
 -Modular
 -MobX
 
+# Screenshots
+  ![screenshot](https://github.com/OrlandoEduardo101/covid19_monitor_bahia/blob/master/asset/screenshot-2020-06-15_19.23.33.768.png?raw=true)
+  ![screenshot](https://github.com/OrlandoEduardo101/covid19_monitor_bahia/blob/master/asset/screenshot-2020-06-15_19.23.38.764.png?raw=true)
+  ![screenshot](https://github.com/OrlandoEduardo101/covid19_monitor_bahia/blob/master/asset/screenshot-2020-06-15_19.23.42.706.png?raw=true)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
